@@ -1,0 +1,23 @@
+# Environment files — never commit
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Hermes runtime
+.hermes/
+sessions/
+logs/

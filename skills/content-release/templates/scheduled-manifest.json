@@ -1,0 +1,22 @@
+{
+  "run_id": "<run-id>",
+  "timezone": "America/Sao_Paulo",
+  "status": "scheduled",
+  "verified_remote_schedule_count": 0,
+  "posts": [
+    {
+      "post": "post-01",
+      "title": "<editorial title>",
+      "scheduled_brt": "YYYY-MM-DDTHH:MM:SS-03:00",
+      "scheduled_utc": "YYYY-MM-DDTHH:MM:SSZ",
+      "targets": {
+        "instagram": { "schedule_id": "<remote schedule ID>", "submission_id": "<post submission ID>" },
+        "facebook": { "schedule_id": "<remote schedule ID>", "submission_id": "<post submission ID>" },
+        "linkedin_personal": { "schedule_id": "<remote schedule ID>", "submission_id": "<post submission ID>" },
+        "linkedin_imobiturbo": { "schedule_id": "<remote schedule ID>", "submission_id": "<post submission ID>" },
+        "tiktok": { "schedule_id": "<remote schedule ID>", "submission_id": "<post submission ID>" },
+        "threads": { "schedule_id": "<remote schedule ID>", "submission_id": "<post submission ID>" }
+      }
+    }
+  ]
+}

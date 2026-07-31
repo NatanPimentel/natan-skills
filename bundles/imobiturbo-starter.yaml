@@ -1,0 +1,59 @@
+# Bundle: imobiturbo-starter
+# Instala todas as skills abaixo de uma vez.
+# Uso: hermes skills tap add natanpimentel/natan-skills && hermes skills install imobiturbo-starter
+
+name: imobiturbo-starter
+description: >
+  Pipeline completo de produção de carrosséis Instagram + scanner de
+  pautas (radar). 25 skills genéricas, sem marca específica. O aluno
+  configura seus próprios accountIds, tokens e handles via .env.
+version: "1.0.0"
+author: Natan Pimentel
+license: MIT
+
+skills:
+  # ── Pipeline de carrossel ──────────────────────────────
+  - instagram-carousel-batch      # Orquestrador: 3 carrosséis em paralelo
+  - carousel-renderer             # Renderiza 10 slides JPG 1080×1350
+  - carousel-visual-qa            # Revisão de legibilidade dos slides
+  - template-designer             # Templates visuais reutilizáveis
+
+  # ── Curadoria e editorial ─────────────────────────────
+  - editorial-curation-anti-dup   # Puxa pautas não-usadas com anti-dup
+  - editorial-package             # Pacote editorial completo
+  - publishing-readiness          # Prepara captions e valida release
+  - content-release               # Finalização e agendamento
+
+  # ── Copy e hooks ──────────────────────────────────────
+  - viral-hook-creator            # 19 padrões psicológicos de gancho
+  - viral-hooks                   # Aberturas, thumbnails, scroll-stoppers
+
+  # ── Geração de imagem ─────────────────────────────────
+  - image-gen                     # Orquestrador: GPT Image 2 → Nano Banana
+  - image-creator                 # HTML/CSS → PNG via Playwright
+  - image-fetcher                 # Busca visual de múltiplas fontes
+
+  # ── Stock photos ──────────────────────────────────────
+  - pexels-fetcher
+  - pixabay-fetcher
+  - unsplash-fetcher
+
+  # ── Publicação ────────────────────────────────────────
+  - multi-publisher               # Blotato / GHL / Postiz (3 backends)
+
+  # ── Scanner de pautas (radar) ─────────────────────────
+  - content-radar-x              # Radar de X/Twitter via xAI
+  - research-radar-operations    # Operação de radares multi-fonte
+  - research-freshness-validation # Validação de janela temporal
+
+  # ── Pesquisa e scraping ───────────────────────────────
+  - hound-search                  # Web search self-hosted
+  - apify                         # Scraping e automação
+
+  # ── Transcrição ───────────────────────────────────────
+  - audio-video-transcription     # VSLs, vídeos, áudio via AssemblyAI
+
+  # ── Outros ────────────────────────────────────────────
+  - asset-bank                    # Banco de imagens reutilizáveis
+  - viciante                      # Arquiteta produtos digitais
+  - resend                        # Email (newsletter opcional)

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel Completo — Preview</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0a0a; color:#fff; font-family:'Inter',sans-serif; }
+.header { padding:32px 48px; border-bottom:1px solid #222; }
+.header h1 { font-size:28px; font-weight:700; }
+.header p { color:#71717a; font-size:14px; margin-top:4px; }
+.carousel-wrapper { padding:48px; overflow-x:auto; }
+.carousel { display:flex; gap:24px; padding-bottom:24px; }
+.slide { flex-shrink:0; width:270px; }
+.slide img { width:100%; height:auto; border-radius:12px; border:1px solid #333; display:block; }
+.slide-label { text-align:center; margin-top:10px; font-size:13px; color:#71717a; }
+.slide-label span { color:#d7ff60; font-weight:600; }
+.legend { padding:16px 48px 48px; display:flex; flex-wrap:wrap; gap:16px; }
+.legend-item { display:flex; align-items:center; gap:8px; font-size:13px; color:#a1a1aa; }
+.legend-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Carrossel Completo — 10 Slides</h1>
+  <p>Tema: "O corretor que nao produz conteudo esta perdendo dinheiro" &bull; {{HANDLE}}</p>
+</div>
+
+<div class="carousel-wrapper">
+  <div class="carousel">
+    <div class="slide"><img src="slide-01.png"><div class="slide-label"><span>01</span> Capa (Model A)</div></div>
+    <div class="slide"><img src="slide-02.png"><div class="slide-label"><span>02</span> Body 1 — Dark</div></div>
+    <div class="slide"><img src="slide-03.png"><div class="slide-label"><span>03</span> Body 2 — Light</div></div>
+    <div class="slide"><img src="slide-04.png"><div class="slide-label"><span>04</span> Body 4 — Dark</div></div>
+    <div class="slide"><img src="slide-05.png"><div class="slide-label"><span>05</span> Body 3 — Impacto</div></div>
+    <div class="slide"><img src="slide-06.png"><div class="slide-label"><span>06</span> Body 1 — Dark</div></div>
+    <div class="slide"><img src="slide-07.png"><div class="slide-label"><span>07</span> Body 2 — Light</div></div>
+    <div class="slide"><img src="slide-08.png"><div class="slide-label"><span>08</span> Body 4 — Dark</div></div>
+    <div class="slide"><img src="slide-09.png"><div class="slide-label"><span>09</span> Body 3 — Impacto</div></div>
+    <div class="slide"><img src="slide-10.png"><div class="slide-label"><span>10</span> CTA</div></div>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#000;border:1px solid #555;"></div> Cover (Model A)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#09090b;border:1px solid #555;"></div> Body 1/4 — Dark</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#fafafa;"></div> Body 2 — Light</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#d7ff60;"></div> Body 3 — Impacto</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#000;border:2px solid #d7ff60;"></div> CTA</div>
+</div>
+
+</body>
+</html>
